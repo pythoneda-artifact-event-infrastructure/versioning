@@ -78,32 +78,32 @@
               inherit description license homepage maintainers;
             };
           };
-        pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-for =
+        pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-for =
           { pythoneda-base, pythoneda-artifact-event-versioning, python }:
           pythoneda-artifact-event-infrastructure-versioning-for {
-            version = "0.0.1a1";
+            version = "0.0.1a2";
             inherit pythoneda-base pythoneda-artifact-event-versioning python;
           };
       in rec {
         packages = rec {
-          pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python38 =
-            pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-for {
+          pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python38 =
+            pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-for {
               pythoneda-base =
                 pythoneda-base.packages.${system}.pythoneda-base-latest-python38;
               pythoneda-artifact-event-versioning =
                 pythoneda-artifact-event-versioning.packages.${system}.pythoneda-artifact-event-versioning-latest-python38;
               python = pkgs.python38;
             };
-          pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python39 =
-            pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-for {
+          pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python39 =
+            pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-for {
               pythoneda-base =
                 pythoneda-base.packages.${system}.pythoneda-base-latest-python39;
               pythoneda-artifact-event-versioning =
                 pythoneda-artifact-event-versioning.packages.${system}.pythoneda-artifact-event-versioning-latest-python39;
               python = pkgs.python39;
             };
-          pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python310 =
-            pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-for {
+          pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python310 =
+            pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-for {
               pythoneda-base =
                 pythoneda-base.packages.${system}.pythoneda-base-latest-python310;
               pythoneda-artifact-event-versioning =
@@ -111,50 +111,50 @@
               python = pkgs.python310;
             };
           pythoneda-artifact-event-infrastructure-versioning-latest-python38 =
-            pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python38;
+            pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python38;
           pythoneda-artifact-event-infrastructure-versioning-latest-python39 =
-            pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python39;
+            pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python39;
           pythoneda-artifact-event-infrastructure-versioning-latest-python310 =
-            pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python310;
+            pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python310;
           pythoneda-artifact-event-infrastructure-versioning-latest =
             pythoneda-artifact-event-infrastructure-versioning-latest-python310;
           default = pythoneda-artifact-event-infrastructure-versioning-latest;
         };
         defaultPackage = packages.default;
         devShells = rec {
-          pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python38 =
+          pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python38 =
             shared.devShell-for {
               package =
-                packages.pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python38;
+                packages.pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python38;
               pythoneda-base =
                 pythoneda-base.packages.${system}.pythoneda-base-latest-python39;
               python = pkgs.python38;
               inherit pkgs nixpkgsRelease;
             };
-          pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python39 =
+          pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python39 =
             shared.devShell-for {
               package =
-                packages.pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python39;
+                packages.pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python39;
               pythoneda-base =
                 pythoneda-base.packages.${system}.pythoneda-base-latest-python39;
               python = pkgs.python39;
               inherit pkgs nixpkgsRelease;
             };
-          pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python310 =
+          pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python310 =
             shared.devShell-for {
               package =
-                packages.pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python310;
+                packages.pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python310;
               pythoneda-base =
                 pythoneda-base.packages.${system}.pythoneda-base-latest-python310;
               python = pkgs.python310;
               inherit pkgs nixpkgsRelease;
             };
           pythoneda-artifact-event-infrastructure-versioning-latest-python38 =
-            pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python38;
+            pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python38;
           pythoneda-artifact-event-infrastructure-versioning-latest-python39 =
-            pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python39;
+            pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python39;
           pythoneda-artifact-event-infrastructure-versioning-latest-python310 =
-            pythoneda-artifact-event-infrastructure-versioning-0_0_1a1-python310;
+            pythoneda-artifact-event-infrastructure-versioning-0_0_1a2-python310;
           pythoneda-artifact-event-infrastructure-versioning-latest =
             pythoneda-artifact-event-infrastructure-versioning-latest-python310;
           default = pythoneda-artifact-event-infrastructure-versioning-latest;
